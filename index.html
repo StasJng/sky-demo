@@ -24,7 +24,7 @@
 <body>
     <!--#region Header-->
     <header class="header" id="header">
-        <div class="header-top">
+        <div class="header-top d-none d-sm-none d-md-none d-lg-none d-xl-flex">
             <div class="container flex-align-center position-relative">
                 <div class="header-top__left">
                     You are a student and students get 20% discount. <span><a href="#">Learn More</a></span>
@@ -60,7 +60,8 @@
                     <img src="/" data-src="assets/images/logo.svg" class="header-mid__logo" alt="logo" height="100"
                         width="100">
 
-                    <div class="header-mid__search-box flex-align-center">
+                    <div
+                        class="header-mid__search-box flex-align-center d-none d-sm-none d-md-none d-lg-none d-xl-flex">
                         <div class="header-mid__select flex-align-center">
                             All Categories
                             <img src="/" data-src="assets/images/icons/ico-drop-arr.svg" alt="dropdown" height="15"
@@ -71,7 +72,7 @@
                     </div>
 
                     <div class="header-mid__custom flex-align-center">
-                        <div class="header-mid__ops flex-align-center">
+                        <div class="header-mid__ops flex-align-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
                             <div class="header-mid__icon ">
                                 <img src="/" data-src="assets/images/icons/ico-user.svg" alt="logo" height="100"
                                     width="100">
@@ -82,7 +83,7 @@
                             </div>
                         </div>
 
-                        <div class="header-mid__ops flex-align-center">
+                        <div class="header-mid__ops flex-align-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
                             <div class="header-mid__icon">
                                 <img src="/" data-src="assets/images/icons/ico-heart.svg" alt="logo" height="100"
                                     width="100">
@@ -106,7 +107,7 @@
             </div>
         </div>
 
-        <nav class="header-bot flex-align-center">
+        <nav class="header-bot flex-align-center d-none d-sm-none d-md-none d-lg-none d-xl-flex">
             <div class="container flex-align-center position-relative">
                 <div class="header-bot__left flex-align-center">
                     <div>Home<img src="/" data-src="assets/images/icons/ico-drop-arr.svg" alt="dropdown" height="15"
@@ -140,8 +141,8 @@
 
     <!--#region Body-->
     <main class="body">
-        <div class="container p-sm-0">
-            <div class="banner-reg">
+        <div class="container">
+            <div class="banner-reg d-none d-sm-none d-md-none d-lg-block d-xl-block">
                 <div class="banner-swiper">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -287,25 +288,22 @@
                         slidesPerView: 3,
                         spaceBetween: 5,
                         loop: false,
-                        // pagination: {
-                        //     el: '.banner-swiper .swiper-pagination',
-                        //     clickable: true,
-                        // },
-                        // navigation: {
-                        //     nextEl: ".swiper-button-next",
-                        //     prevEl: ".swiper-button-prev",
-                        // },
-                        // breakpoints: {
-                        //     768: {
-                        //         slidesPerView: 1,
-                        //         spaceBetween: 24,
+                        breakpoints: {
+                            768: {
+                                slidesPerView: 1.1,
+                                spaceBetween: 5,
 
-                        //     },
-                        //     1200: {
-                        //         slidesPerView: 2,
-                        //         spaceBetween: 24,
-                        //     }
-                        // }
+                            },
+                            992: {
+                                slidesPerView: 1.5,
+                                spaceBetween: 5,
+
+                            },
+                            1200: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 5,
+                            }
+                        }
                     }
                     );
                 </script>
@@ -532,7 +530,7 @@
     <!--#region Footer-->
     <footer class="footer">
         <div class="foottop">
-            <div class="container p-sm-0">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                         <div class="foottop__title">
@@ -577,12 +575,12 @@
         </div>
 
         <div class="footbot">
-            <div class="container p-sm-0 position-relative flex-align-center">
+            <div class="container position-relative flex-align-center">
                 <div class="footbot__left">
                     Copyright © <span><a href="#">Uminex</a></span> all rights reserved. Powered by <span><a
                             href="#">Blueskytechco</a></span>.
                 </div>
-                <div class="footbot__right flex-align-center">
+                <div class="footbot__right flex-align-center d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
                     Payment method:
                     <img src="/" data-src="assets/images/payments/1.svg" alt="payment method" height="25" width="25">
                     <img src="/" data-src="assets/images/payments/2.svg" alt="payment method" height="25" width="25">
