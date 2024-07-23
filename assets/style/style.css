@@ -506,6 +506,9 @@ div.header-mid__ops:last-of-type {
     height: auto;
     width: 100%;
     aspect-ratio: auto;
+}
+
+.probox__img {
     min-height: 164px;
 }
 
