@@ -525,6 +525,7 @@ div.header-mid__ops:last-of-type {
     line-height: 12px;
     font-weight: 500;
     margin-bottom: 4px;
+    filter: hue-rotate(0deg) brightness(0%) contrast(100%);
 }
 
 .probox__rating img {
@@ -532,7 +533,6 @@ div.header-mid__ops:last-of-type {
     width: auto;
     aspect-ratio: auto;
     margin-right: 6px;
-    filter: hue-rotate(0deg) brightness(30%) contrast(90%);
 }
 
 .probox__price {
