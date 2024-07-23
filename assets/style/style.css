@@ -451,6 +451,30 @@ div.header-mid__ops:last-of-type {
     height: 100%
 }
 
+.probox__offer {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E5E8EC;
+    height: 28px;
+    margin-bottom: 12px;
+}
+
+.probox__gift {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid#E5E8EC;
+    background: #FFF;
+    position: absolute;
+    background-image: url(../images/icons/ico-gift.svg);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: center center;
+    top: 20px;
+    right: 20px
+}
+
 .probox__tag {
     width: 55px;
     height: 25px;
@@ -463,6 +487,11 @@ div.header-mid__ops:last-of-type {
     position: absolute;
     top: 20px;
     left: 20px
+}
+
+.probox--main .probox__gift,
+.probox--main .probox__tag {
+    top: 62px;
 }
 
 .probox__tag--sale {
@@ -492,14 +521,14 @@ div.header-mid__ops:last-of-type {
     line-height: 12px;
     font-weight: 500;
     margin-bottom: 4px;
-    filter: hue-rotate(-28deg) brightness(100%) contrast(90%);
 }
 
 .probox__rating img {
     height: 12px;
     width: auto;
     aspect-ratio: auto;
-    margin-right: 6px
+    margin-right: 6px;
+    filter: hue-rotate(-28deg) brightness(100%) contrast(90%);
 }
 
 .probox__price {
@@ -555,11 +584,11 @@ div.header-mid__ops:last-of-type {
     color: #515D66;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 18px
+    margin-top: 12px
 }
 
 .countdown-container {
-    margin: 9px 0 20px 0
+    margin: 9px 0 18px 0
 }
 
 .countdown-container li {
