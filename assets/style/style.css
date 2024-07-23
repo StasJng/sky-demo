@@ -532,13 +532,6 @@ div.header-mid__ops:last-of-type {
     background-repeat: no-repeat;
 }
 
-/* .probox__rating img {
-    height: 12px;
-    width: auto;
-    aspect-ratio: auto;
-    margin-right: 6px;
-} */
-
 .probox__price {
     margin-bottom: 10px;
     color: #2B38D1;
