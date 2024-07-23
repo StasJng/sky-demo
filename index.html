@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/fonts.css">
     <link rel="stylesheet" href="assets/style/reponsive.css" />
-
+    <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="assets/plugins/swiper-slider/css/swiper.min.css">
     <script src="assets/plugins/swiper-slider/js/swiper.min.js"></script>
-
     <meta name="title" content="UMINEX" />
     <meta name="keywords" content="UMINEX" />
     <meta name="description" content="UMINEX">
@@ -397,8 +394,21 @@
                                 <span class="probox__price--sale">$128.00</span>
                                 <span class="probox__price--origin">$12.00</span>
                             </div>
-                            <div>Hurry up! Offer ends in:</div>
-                            <div></div>
+                            <div class="probox__counttxt">Hurry up! Offer ends in:</div>
+                            <div class="flex-align-center">
+                                <input type="hidden" id="countdowntTime" value="1/1/2025 11:53:32 AM" />
+                                <div class="countdown-container flex-align-center show-unit">
+                                    <ul>
+                                        <li><i><span class="days-left"></span></i></li>
+                                        <li><i><span class="countdown-seperator">:</span></i></li>
+                                        <li><i><span class="hours-left"></span></i></li>
+                                        <li><i><span class="countdown-seperator">:</span></i></li>
+                                        <li><i><span class="minutes-left"></span></i></li>
+                                        <li><i><span class="countdown-seperator">:</span></i></li>
+                                        <li><i><span class="seconds-left"></span></i></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div>
                                 <div class="skillbar" total="896" saled="620">
                                     <div id="count-bar" class="count-bar" style="width: 82%;"></div>
@@ -558,6 +568,83 @@
 
     </footer>
     <!--#endregion-->
+
+    <script>
+        (function () {
+            var stopDay = document.getElementById("countdowntTime").value;
+
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            const countDown = new Date(stopDay).getTime(),
+                x = setInterval(function () {
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    if (now > countDown) {
+                        $(".days-left").each(function () {
+                            $(this).html("00");
+                        });
+
+                        $(".hours-left").each(function () {
+                            $(this).html("00");
+                        });
+
+                        $(".minutes-left").each(function () {
+                            $(this).html("00");
+                        });
+
+                        $(".seconds-left").each(function () {
+                            $(this).html("00");
+                        });
+                    }
+                    else {
+                        if (Math.floor(distance % (day)) < 10) {
+                            $(".days-left").html("0" + Math.floor(distance / (day)));
+                        }
+                        else {
+                            $(".days-left").html(Math.floor(distance / (day)));
+                        }
+
+                        if (Math.floor((distance % (day)) / (hour)) < 10) {
+                            $(".hours-left").html("0" + Math.floor((distance % (day)) / (hour)));
+                        }
+                        else {
+                            $(".hours-left").html(Math.floor((distance % (day)) / (hour)));
+                        }
+
+                        if (Math.floor((distance % (hour)) / (minute)) < 10) {
+                            $(".minutes-left").html("0" + Math.floor((distance % (hour)) / (minute)));
+                        }
+                        else {
+                            $(".minutes-left").html(Math.floor((distance % (hour)) / (minute)));
+                        }
+
+                        if (Math.floor((distance % (minute)) / second) < 10) {
+                            $(".seconds-left").html("0" + Math.floor((distance % (minute)) / second));
+                        }
+                        else {
+                            $(".seconds-left").html(Math.floor((distance % (minute)) / second));
+                        }
+                    }
+
+                    if (distance < 0) {
+                        $("#countdown-zone").addClass("d-none");
+                        clearInterval(x);
+                    }
+                }, 0)
+        }());
+
+        $(document).ready(function () {
+            $('.skillbar').each(function () {
+                $(this).find('.count-bar').animate({
+                    width: (((parseInt($(this).attr('saled')) / parseInt($(this).attr('total'))) * 100).toString() + "%")
+                }, 2);
+            });
+        });
+    </script>
 </body>
 
 </html>
