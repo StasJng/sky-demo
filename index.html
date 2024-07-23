@@ -707,21 +707,6 @@
         });
     </script>
     <!--#endregion-->
-
-    <!-- Async Load Scripts & Fonts -->
-    <script>
-        loadFontAsync = (fontSource) => {
-            let n = document.createElement("link");
-            n.rel = "stylesheet", n.href = fontSource, n.addEventListener("load", function () { }, !1), document.getElementsByTagName("head")[0].appendChild(n);
-        }
-
-        window.addEventListener("DOMContentLoaded", async function () {
-            setTimeout(function () {
-                loadFontAsync("assets/style/fonts.css");
-            }, 8000)
-        }, !1);
-    </script>
-    <!-- Finish Load scripts -->
 </body>
 
 </html>
