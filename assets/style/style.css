@@ -525,14 +525,19 @@ div.header-mid__ops:last-of-type {
     line-height: 12px;
     font-weight: 500;
     margin-bottom: 4px;
+    padding-left: 68px;
+    background-image: url(../images/icons/ico-5-star.svg);
+    background-position: left center;
+    background-size: auto 12px;
+    background-repeat: no-repeat;
 }
 
-.probox__rating img {
+/* .probox__rating img {
     height: 12px;
     width: auto;
     aspect-ratio: auto;
     margin-right: 6px;
-}
+} */
 
 .probox__price {
     margin-bottom: 10px;
