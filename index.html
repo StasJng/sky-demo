@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/variable.css">
 
-    <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="assets/plugins/swiper-slider/css/swiper.min.css">
     <script src="assets/plugins/swiper-slider/js/swiper.min.js"></script>
 
@@ -22,24 +21,16 @@
 </head>
 
 <body>
-    <!--#region Header-->
     <header class="header" id="header">
         <div class="header-top d-none d-sm-none d-md-none d-lg-none d-xl-flex">
             <div class="container flex-align-center position-relative">
                 <div class="header-top__left">
                     You are a student and students get 20% discount. <span><a href="#">Learn More</a></span>
                 </div>
-
                 <div class="header-top__right flex-align-center">
-                    <div>
-                        Store Locator
-                    </div>
-                    <div>
-                        Order Tracking
-                    </div>
-                    <div>
-                        FAQs
-                    </div>
+                    <div>Store Locator</div>
+                    <div>Order Tracking</div>
+                    <div>FAQs</div>
                     <div class="header-top__right--selector">
                         English
                         <img src="/" data-src="assets/images/icons/ico-drop-arr.svg" alt="dropdown" height="15"
@@ -53,13 +44,11 @@
                 </div>
             </div>
         </div>
-
         <div class="header-mid flex-align-center">
             <div class="container position-relative">
                 <div class="flex-align-center">
                     <img src="/" data-src="assets/images/logo.svg" class="header-mid__logo" alt="logo" height="100"
                         width="100">
-
                     <div
                         class="header-mid__search-box flex-align-center d-none d-sm-none d-md-none d-lg-none d-xl-flex">
                         <div class="header-mid__select flex-align-center">
@@ -70,7 +59,6 @@
                         <input class="header-mid__input" type="text" placeholder="Search in 200+ products...">
                         <div class="header-mid__button">Search</div>
                     </div>
-
                     <div class="header-mid__custom flex-align-center">
                         <div class="header-mid__ops flex-align-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
                             <div class="header-mid__icon ">
@@ -82,7 +70,6 @@
                                 <div class="header-mid__title">Account</div>
                             </div>
                         </div>
-
                         <div class="header-mid__ops flex-align-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
                             <div class="header-mid__icon">
                                 <img src="/" data-src="assets/images/icons/ico-heart.svg" alt="logo" height="100"
@@ -90,7 +77,6 @@
                                 <span class="header-mid__count">2</span>
                             </div>
                         </div>
-
                         <div class="header-mid__ops cart flex-align-center">
                             <div class="header-mid__icon position-relative">
                                 <img src="/" data-src="assets/images/icons/ico-cart.svg" alt="logo" height="100"
@@ -106,7 +92,6 @@
                 </div>
             </div>
         </div>
-
         <nav class="header-bot flex-align-center d-none d-sm-none d-md-none d-lg-none d-xl-flex">
             <div class="container flex-align-center position-relative">
                 <div class="header-bot__left flex-align-center">
@@ -129,7 +114,6 @@
                             height="15" width="15"></div>
                     <div><span>Buy Uminex!</span></div>
                 </div>
-
                 <div class="header-bot__right flex-align-center">
                     <img src="/" data-src="assets/images/icons/ico-sale.svg" alt="sale" height="100" width="100">
                     Sale $20 Off Your First Order.
@@ -137,9 +121,7 @@
             </div>
         </nav>
     </header>
-    <!--#endregion-->
 
-    <!--#region Body-->
     <main class="body">
         <div class="container">
             <div class="banner-reg d-none d-sm-none d-md-none d-lg-block d-xl-block">
@@ -202,33 +184,6 @@
                         <div class="swiper-button-prev"></div>
                     </div>
                 </div>
-                <script>
-                    let bannerSwiper = new Swiper('.banner-swiper .swiper-container', {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                        loop: false,
-                        pagination: {
-                            el: '.banner-swiper .swiper-pagination',
-                            clickable: false,
-                        },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                        // breakpoints: {
-                        //     768: {
-                        //         slidesPerView: 1,
-                        //         spaceBetween: 24,
-
-                        //     },
-                        //     1200: {
-                        //         slidesPerView: 2,
-                        //         spaceBetween: 24,
-                        //     }
-                        // }
-                    }
-                    );
-                </script>
             </div>
 
             <div class="category-reg">
@@ -414,16 +369,16 @@
                             </div>
                             <div class="probox__counttxt">Hurry up! Offer ends in:</div>
                             <div class="flex-align-center">
-                                <input type="hidden" id="countdowntTime" value="1/1/2025 11:53:32 AM">
+                                <input type="hidden" id="countdowntTime" value="1/1/2025 12:00:00 AM">
                                 <div class="countdown-container flex-align-center show-unit">
                                     <ul>
-                                        <li><i><span class="days-left"></span></i></li>
+                                        <li><i><span class="days-left">00</span></i></li>
                                         <li><i><span class="countdown-seperator">:</span></i></li>
-                                        <li><i><span class="hours-left"></span></i></li>
+                                        <li><i><span class="hours-left">00</span></i></li>
                                         <li><i><span class="countdown-seperator">:</span></i></li>
-                                        <li><i><span class="minutes-left"></span></i></li>
+                                        <li><i><span class="minutes-left">00</span></i></li>
                                         <li><i><span class="countdown-seperator">:</span></i></li>
-                                        <li><i><span class="seconds-left"></span></i></li>
+                                        <li><i><span class="seconds-left">00</span></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -525,23 +480,15 @@
             </div>
         </div>
     </main>
-    <!--#endregion-->
 
-    <!--#region Footer-->
     <footer class="footer">
         <div class="foottop">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                        <div class="foottop__title">
-                            About The Store
-                        </div>
-                        <div>
-                            Got Question? Call us 24/7
-                        </div>
-                        <div class="foottop__phone">
-                            <a href="tel:+222-1800-2628">+222-1800-2628</a>
-                        </div>
+                        <div class="foottop__title">About The Store</div>
+                        <div>Got Question? Call us 24/7</div>
+                        <div class="foottop__phone"><a href="tel:+222-1800-2628">+222-1800-2628</a></div>
                         <p>268 St, South New York/NY 98944, United States</p>
                         <p>Customersupport@example.com</p>
                         <p>Info@example.com</p>
@@ -609,104 +556,96 @@
                     const now = new Date().getTime(),
                         distance = countDown - now;
 
-                    if (now > countDown) {
-                        $(".days-left").each(function () {
-                            $(this).html("00");
-                        });
-
-                        $(".hours-left").each(function () {
-                            $(this).html("00");
-                        });
-
-                        $(".minutes-left").each(function () {
-                            $(this).html("00");
-                        });
-
-                        $(".seconds-left").each(function () {
-                            $(this).html("00");
+                    let days = document.querySelectorAll('.days-left');
+                    if (Math.floor(distance % (day)) < 10) {
+                        [].forEach.call(days, function (element) {
+                            element.textContent = "0" + Math.floor(distance / (day));
                         });
                     }
                     else {
-                        if (Math.floor(distance % (day)) < 10) {
-                            $(".days-left").html("0" + Math.floor(distance / (day)));
-                        }
-                        else {
-                            $(".days-left").html(Math.floor(distance / (day)));
-                        }
+                        [].forEach.call(days, function (element) {
+                            element.textContent = (Math.floor(distance / (day)));
+                        });
+                    }
 
-                        if (Math.floor((distance % (day)) / (hour)) < 10) {
-                            $(".hours-left").html("0" + Math.floor((distance % (day)) / (hour)));
-                        }
-                        else {
-                            $(".hours-left").html(Math.floor((distance % (day)) / (hour)));
-                        }
 
-                        if (Math.floor((distance % (hour)) / (minute)) < 10) {
-                            $(".minutes-left").html("0" + Math.floor((distance % (hour)) / (minute)));
-                        }
-                        else {
-                            $(".minutes-left").html(Math.floor((distance % (hour)) / (minute)));
-                        }
+                    let hours = document.querySelectorAll('.hours-left');
+                    if (Math.floor((distance % (day)) / (hour)) < 10) {
+                        [].forEach.call(hours, function (element) {
+                            element.textContent = "0" + Math.floor((distance % (day)) / (hour));
+                        });
+                    }
+                    else {
+                        [].forEach.call(hours, function (element) {
+                            element.textContent = Math.floor((distance % (day)) / (hour));
+                        });
+                    }
 
-                        if (Math.floor((distance % (minute)) / second) < 10) {
-                            $(".seconds-left").html("0" + Math.floor((distance % (minute)) / second));
-                        }
-                        else {
-                            $(".seconds-left").html(Math.floor((distance % (minute)) / second));
-                        }
+
+                    let minutes = document.querySelectorAll('.minutes-left');
+                    if (Math.floor((distance % (hour)) / (minute)) < 10) {
+                        [].forEach.call(minutes, function (element) {
+                            element.textContent = "0" + Math.floor((distance % (hour)) / (minute));
+                        });
+                    }
+                    else {
+                        [].forEach.call(minutes, function (element) {
+                            element.textContent = Math.floor((distance % (hour)) / (minute));
+                        });
+                    }
+
+                    let seconds = document.querySelectorAll('.seconds-left');
+                    if (Math.floor((distance % (minute)) / second) < 10) {
+                        [].forEach.call(seconds, function (element) {
+                            element.textContent = "0" + Math.floor((distance % (minute)) / second);
+                        });
+                    }
+                    else {
+                        [].forEach.call(seconds, function (element) {
+                            element.textContent = Math.floor((distance % (minute)) / second);
+                        });
                     }
 
                     if (distance < 0) {
-                        $("#countdown-zone").addClass("d-none");
                         clearInterval(x);
                     }
                 }, 0)
         }());
 
-        // $(document).ready(function () {
-        //     $('.skillbar').each(function () {
-        //         $(this).find('.count-bar').animate({
-        //             width: (((parseInt($(this).attr('saled')) / parseInt($(this).attr('total'))) * 100).toString() + "%")
-        //         }, 2);
-        //     });
-        // });
-    </script>
-
-    <!--#region Lazy Load Images-->
-    <script>
-        // Select all images which need lazy-loading
         const lazyImages = document.querySelectorAll('img');
-
-        // Lazy load
         const lazyImageObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
-                // If image is about to be scroll on
                 if (entry.isIntersecting) {
                     const lazyImage = entry.target;
                     const src = lazyImage.dataset.src;
 
                     lazyImage.tagName.toLowerCase() === 'img'
-                        // <img>: copy data-src -> src
                         ? lazyImage.src = src
-
-                        // <div>: copy data-src -> background-image
                         : lazyImage.style.backgroundImage = "url(\'" + src + "\')";
-
-                    // Remove attribute lazy
                     lazyImage.removeAttribute('lazy');
-
-                    // Stop observe
                     observer.unobserve(lazyImage);
                 }
             });
         });
-
-        // Observe each image and load
         lazyImages.forEach((lazyImage) => {
             lazyImageObserver.observe(lazyImage);
         });
+
+        let bannerSwiper = new Swiper('.banner-swiper .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: false,
+            pagination: {
+                el: '.banner-swiper .swiper-pagination',
+                clickable: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        }
+        );
     </script>
-    <!--#endregion-->
 </body>
 
 </html>
