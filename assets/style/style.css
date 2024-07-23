@@ -438,7 +438,8 @@ div.header-mid__ops:last-of-type {
     background: #FFF;
     padding: 20px;
     position: relative;
-    color: #212529
+    color: #212529;
+    aspect-ratio: auto;
 }
 
 .probox:hover {
@@ -490,7 +491,8 @@ div.header-mid__ops:last-of-type {
     font-size: 12px;
     line-height: 12px;
     font-weight: 500;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    filter: hue-rotate(-28deg) brightness(100%) contrast(90%);
 }
 
 .probox__rating img {
@@ -514,7 +516,7 @@ div.header-mid__ops:last-of-type {
 }
 
 .probox__price--origin {
-    color: #8D979E;
+    color: #505B5E;
     font-size: 14px;
     font-weight: 400;
     text-decoration-line: line-through
@@ -543,7 +545,7 @@ div.header-mid__ops:last-of-type {
 }
 
 .probox__status--outofstock {
-    color: #EF262C;
+    color: #E01600;
     font-size: 12px;
     font-weight: 500;
     line-height: 20px
