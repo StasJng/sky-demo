@@ -6,28 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/variable.css" />
     <link rel="stylesheet" href="assets/style/fonts.css">
     <link rel="stylesheet" href="assets/style/reponsive.css" />
+
     <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="assets/plugins/swiper-slider/css/swiper.min.css">
     <script src="assets/plugins/swiper-slider/js/swiper.min.js"></script>
+
     <meta name="title" content="UMINEX" />
     <meta name="keywords" content="UMINEX" />
     <meta name="description" content="UMINEX">
 
     <title>UMINEX</title>
-
     <!--#region Schema-->
     <!-- <script type="application/ld+json">
-
     </script> -->
     <!--#endregion-->
 </head>
 
 <body>
     <!--#region Header-->
-    <header class="header" id="header">
+    <div class="header" id="header">
         <div class="header-top">
             <div class="container flex-align-center position-relative">
                 <div class="header-top__left">
@@ -44,17 +46,13 @@
                     <div>
                         FAQs
                     </div>
-                    <div>
-                        <select>
-                            <option selected>EN</option>
-                            <option>VI</option>
-                        </select>
+                    <div class="header-top__right--selector">
+                        English
+                        <img src="assets/images/icons/ico-drop-arr.svg" alt="dropdown" height="15" width="15" />
                     </div>
-                    <div>
-                        <select>
-                            <option selected>USD</option>
-                            <option>VND</option>
-                        </select>
+                    <div class="header-top__right--selector">
+                        USD
+                        <img src="assets/images/icons/ico-drop-arr.svg" alt="dropdown" height="15" width="15" />
                     </div>
                 </div>
             </div>
@@ -66,10 +64,10 @@
                     <img class="header-mid__logo" src="assets/images/logo.svg" alt="logo" height="100" width="100" />
 
                     <div class="header-mid__search-box flex-align-center">
-                        <select class="header-mid__select">
-                            <option selected>All Categories</option>
-                            <option>Random</option>
-                        </select>
+                        <div class="header-mid__select flex-align-center">
+                            All Categories
+                            <img src="assets/images/icons/ico-drop-arr.svg" alt="dropdown" height="15" width="15" />
+                        </div>
                         <input class="header-mid__input" type="text" placeholder="Search in 200+ products...">
                         <div class="header-mid__button">Search</div>
                     </div>
@@ -131,7 +129,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <!--#endregion-->
 
     <!--#region Body-->
@@ -147,9 +145,10 @@
                                     <div class="banner-swiper__text-ctn flex-align-center">
                                         <div class="banner-swiper__text-box">
                                             <div class="banner-swiper__supline">Gamepad console</div>
-                                            <p class="banner-swiper__headline">Today’s Offer</p>
-                                            <p class="banner-swiper__headline">Skin&nbsp;<span>Gamepad</span>&nbsp;2022
-                                            </p>
+                                            <div class="banner-swiper__headline">
+                                                <p>Today’s Offer</p>
+                                                <p>Skin&nbsp;<span>Gamepad</span>&nbsp;2022</p>
+                                            </div>
                                             <div class="banner-swiper__button">Shop Now</div>
                                         </div>
                                     </div>
@@ -162,9 +161,10 @@
                                     <div class="banner-swiper__text-ctn flex-align-center">
                                         <div class="banner-swiper__text-box">
                                             <div class="banner-swiper__supline">Gamepad console</div>
-                                            <p class="banner-swiper__headline">Today’s Offer</p>
-                                            <p class="banner-swiper__headline">Skin&nbsp;<span>Gamepad</span>&nbsp;2022
-                                            </p>
+                                            <div class="banner-swiper__headline">
+                                                <p>Today’s Offer</p>
+                                                <p>Skin&nbsp;<span>Gamepad</span>&nbsp;2022</p>
+                                            </div>
                                             <div class="banner-swiper__button">Shop Now</div>
                                         </div>
                                     </div>
@@ -177,9 +177,10 @@
                                     <div class="banner-swiper__text-ctn flex-align-center">
                                         <div class="banner-swiper__text-box">
                                             <div class="banner-swiper__supline">Gamepad console</div>
-                                            <p class="banner-swiper__headline">Today’s Offer</p>
-                                            <p class="banner-swiper__headline">Skin&nbsp;<span>Gamepad</span>&nbsp;2022
-                                            </p>
+                                            <div class="banner-swiper__headline">
+                                                <p>Today’s Offer</p>
+                                                <p>Skin&nbsp;<span>Gamepad</span>&nbsp;2022</p>
+                                            </div>
                                             <div class="banner-swiper__button">Shop Now</div>
                                         </div>
                                     </div>
@@ -501,7 +502,7 @@
     <!--#endregion-->
 
     <!--#region Footer-->
-    <footer class="footer">
+    <div class="footer">
         <div class="foottop">
             <div class="container p-sm-0">
                 <div class="row">
@@ -565,8 +566,7 @@
                 </div>
             </div>
         </div>
-
-    </footer>
+    </div>
     <!--#endregion-->
 
     <script>
