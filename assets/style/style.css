@@ -700,6 +700,7 @@ div.header-mid__ops:last-of-type {
     color: #515D66;
     font-size: 14px;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 
 .foottop__page a:hover {
